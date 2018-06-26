@@ -16,6 +16,7 @@ class gameVC: UIViewController, UICollectionViewDataSource,UICollectionViewDeleg
     @IBOutlet weak var verbsLbl: UILabel!
     @IBOutlet weak var timerLbl: UILabel!
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var translateLbl: UILabel!
     
     
     let allVerbs = VerbsBank()
@@ -54,6 +55,7 @@ class gameVC: UIViewController, UICollectionViewDataSource,UICollectionViewDeleg
             arrayCells.removeAll()
             //agregamos un verbo al label para mostrarlo en pantalla
             verbsLbl.text = allVerbs.verbsList[number].verb
+            translateLbl.text = allVerbs.verbsList[number].translation
             record = UserDefaults.standard.integer(forKey: "scoredGot")
             print("record->\(record)")
             timerStart()

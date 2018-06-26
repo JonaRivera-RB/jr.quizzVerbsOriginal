@@ -7,11 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		131448B620B50DA100C73E34 /* gamerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131448B520B50DA100C73E34 /* gamerVC.swift */; };
 		131448B820B5117A00C73E34 /* desginedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131448B720B5117A00C73E34 /* desginedView.swift */; };
-		131448BB20B51EAC00C73E34 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131448BA20B51EAC00C73E34 /* Questions.swift */; };
-		131448BD20B5213000C73E34 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131448BC20B5213000C73E34 /* QuestionBank.swift */; };
-		131448BF20B52F6D00C73E34 /* yourScoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131448BE20B52F6D00C73E34 /* yourScoreVC.swift */; };
 		135747F720B2491C00256D27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135747F620B2491C00256D27 /* AppDelegate.swift */; };
 		135747F920B2491C00256D27 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135747F820B2491C00256D27 /* ViewController.swift */; };
 		135747FC20B2491C00256D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 135747FA20B2491C00256D27 /* Main.storyboard */; };
@@ -26,11 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		131448B520B50DA100C73E34 /* gamerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gamerVC.swift; sourceTree = "<group>"; };
 		131448B720B5117A00C73E34 /* desginedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = desginedView.swift; sourceTree = "<group>"; };
-		131448BA20B51EAC00C73E34 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
-		131448BC20B5213000C73E34 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
-		131448BE20B52F6D00C73E34 /* yourScoreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yourScoreVC.swift; sourceTree = "<group>"; };
 		135747F320B2491C00256D27 /* quizzVerbs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizzVerbs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		135747F620B2491C00256D27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		135747F820B2491C00256D27 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +52,6 @@
 		131448B920B51D3000C73E34 /* Clases */ = {
 			isa = PBXGroup;
 			children = (
-				131448BA20B51EAC00C73E34 /* Questions.swift */,
-				131448BC20B5213000C73E34 /* QuestionBank.swift */,
 				13740F3620BB483000D8E4AE /* cellAnswersCVC.swift */,
 				13740F3A20BB499E00D8E4AE /* verbs.swift */,
 				13740F3C20BB4A1B00D8E4AE /* VerbsBank.swift */,
@@ -104,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				135747F820B2491C00256D27 /* ViewController.swift */,
-				131448B520B50DA100C73E34 /* gamerVC.swift */,
-				131448BE20B52F6D00C73E34 /* yourScoreVC.swift */,
 				13740F3820BB48F100D8E4AE /* gameVC.swift */,
 				13BFC81320CB18010024B139 /* yourScoreGuessVC.swift */,
 			);
@@ -193,18 +181,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13BFC81420CB18010024B139 /* yourScoreGuessVC.swift in Sources */,
-				131448BF20B52F6D00C73E34 /* yourScoreVC.swift in Sources */,
 				135747F920B2491C00256D27 /* ViewController.swift in Sources */,
 				131448B820B5117A00C73E34 /* desginedView.swift in Sources */,
-				131448B620B50DA100C73E34 /* gamerVC.swift in Sources */,
 				13740F3920BB48F100D8E4AE /* gameVC.swift in Sources */,
-				131448BB20B51EAC00C73E34 /* Questions.swift in Sources */,
 				135747F720B2491C00256D27 /* AppDelegate.swift in Sources */,
 				13740F3720BB483000D8E4AE /* cellAnswersCVC.swift in Sources */,
 				13740F3D20BB4A1B00D8E4AE /* VerbsBank.swift in Sources */,
 				1357480C20B2624300256D27 /* designedButton.swift in Sources */,
 				13740F3B20BB499E00D8E4AE /* verbs.swift in Sources */,
-				131448BD20B5213000C73E34 /* QuestionBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +335,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 967D57A66Z;
 				INFOPLIST_FILE = quizzVerbs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,6 +354,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 967D57A66Z;
 				INFOPLIST_FILE = quizzVerbs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
